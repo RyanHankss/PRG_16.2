@@ -6,9 +6,9 @@ class Time(object):
     """
 
 t = Time()
-hours = 11
-minutes = 18
-seconds = 20
+hour = 11
+minute = 18
+second = 20
 
 
 def is_after(t1, t2):
