@@ -5,13 +5,24 @@ class Time(object):
     attributes: hour, minute, second
     """
 
-t = Time()
-hour = 11
-minute = 18
-second = 20
+t1 = Time()
+t1.hour = 11
+t1.minute = 18
+t1.second = 20
 
+t2 = Time()
+t2.hour = 13
+t2.minute = 30
+t2.second = 20
 
-def is_after(t1, t2):
-    return (t1.hour, t1.minute, t1.second) > (t2.hour, t2.minute, t2.second)
+def times():
+    seconds = 0
+    seconds.hour = hour * 60 * 60
+    seconds.minute = minute * 60
+    seconds = seconds
+    
 
-print(is_after(11,12))
+def is_after(time1, time2):
+   t1 > t2
+
+print(is_after(t1, t2))
